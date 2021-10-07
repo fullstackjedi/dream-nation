@@ -1,7 +1,10 @@
+import '../styles/fonts.css'
+
 import React, { ReactChild } from 'react'
+
+import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../styles'
-import { AppProps } from 'next/app'
 
 const App = ({ Component, pageProps }: AppProps): ReactChild => {
   return (

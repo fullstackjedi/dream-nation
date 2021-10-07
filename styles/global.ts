@@ -9,6 +9,9 @@ export default {
       fontSize: '1.4rem',
       fontFamily: 'Montserrat, sans-serif'
     },
+    'h1, h2, h3, h4, h5, h6': {
+      fontFamily: 'Recoleta'
+    },
     a: {
       _hover: {
         textDecoration: 'none'

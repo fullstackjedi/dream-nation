@@ -33,7 +33,7 @@ const Home = (): ReactChild => {
         </Flex>
         <Flex minH="75rem" justify="center" align="center">
           <Box textAlign="center">
-            <Heading fontWeight="600" fontSize="9rem" color="#2128bd">
+            <Heading fontFamily="Recoleta" fontWeight="900" fontSize="9rem" color="#2128bd">
               Crypto is Life
             </Heading>
             <Text mt="1.5rem" fontSize="1.6rem">
@@ -45,7 +45,9 @@ const Home = (): ReactChild => {
       <Box w="full" bg="#F7F7FC">
         <Container maxW="114rem" pt="7rem" pb="16rem">
           <Box textAlign="center" mx="auto">
-            <Heading fontSize="4.8rem">The Payment Solution You Need</Heading>
+            <Heading fontFamily="Recoleta" fontSize="4.8rem">
+              The Payment Solution You Need
+            </Heading>
             <Text mt="8px">
               Offering you with the payment solution that will quench your needs.
             </Text>
@@ -61,10 +63,10 @@ const Home = (): ReactChild => {
         <Container maxW="114rem">
           <Flex py="21rem" color="#fff" align="center" justify="space-between">
             <Box w="50%" maxW="49rem">
-              <Heading fontSize="3.6rem">
+              <Heading fontWeight="bolder" fontFamily="Recoleta" fontSize="3.6rem">
                 <Text as="span" color="#39C478">
                   Swap
-                </Text>
+                </Text>{' '}
                 from one crypto to another
               </Heading>
               <Text mt="2.7rem" fontSize="2.4rem">
@@ -99,19 +101,21 @@ const Home = (): ReactChild => {
       <Box bg="#F7F7FC" w="full">
         <Container maxW="114rem">
           <Box textAlign="center" mx="auto" pt="9rem">
-            <Heading fontSize="4.8rem">What our customers are saying</Heading>
+            <Heading fontFamily="Recoleta" fontSize="4.8rem">
+              What our customers are saying
+            </Heading>
             <Text fontSize="1.6rem">
               Offering you with the payment solution that will quench your needs.
             </Text>
           </Box>
-          <Flex maxW="49rem" mx="auto" justify="flex-end" pt="5.5rem" pb="2rem">
+          <Flex maxW="49rem" mx="auto" justify="flex-end" pt="5.5rem" pb="2.5rem">
             <Image src="/images/quotes.svg" />
           </Flex>
-          <Box w="100%" maxW="49rem" mx="auto" pb="2.4rem">
+          <Box w="100%" maxW="49rem" mx="auto" pb="10rem">
             <HStack spacing="1.5rem">
               <Avatar size="lg" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
               <Box>
-                <Heading color="#18191F" fontSize="1.8rem">
+                <Heading fontFamily="Recoleta" color="#18191F" fontSize="1.8rem">
                   Jenny Wilson
                 </Heading>
                 <Text color="#474A57">Vice President</Text>
@@ -131,7 +135,9 @@ const Home = (): ReactChild => {
         <Container maxW="114rem">
           <Flex pt="13rem" pb="17rem" align="center">
             <Box w="50%">
-              <Heading fontSize="3.6rem">Coming soon</Heading>
+              <Heading fontFamily="Recoleta" fontSize="3.6rem">
+                Coming soon
+              </Heading>
               <Text mt="2.7rem" fontSize="1.6rem">
                 We are building the future of crypto transactions.
               </Text>
