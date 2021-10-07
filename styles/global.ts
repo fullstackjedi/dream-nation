@@ -5,7 +5,7 @@ export default {
     },
     body: {
       bg: '#fff',
-      color: '#41546c',
+      color: '#000',
       fontSize: '1.4rem',
       fontFamily: 'Montserrat, sans-serif'
     },
