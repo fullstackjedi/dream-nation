@@ -107,7 +107,7 @@ const Home = (): ReactChild => {
           <Flex maxW="49rem" mx="auto" justify="flex-end" pt="5.5rem" pb="2rem">
             <Image src="/images/quotes.svg" />
           </Flex>
-          <Box w="100%" maxW="49rem" mx="auto">
+          <Box w="100%" maxW="49rem" mx="auto" pb="2.4rem">
             <HStack spacing="1.5rem">
               <Avatar size="lg" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
               <Box>
@@ -117,7 +117,7 @@ const Home = (): ReactChild => {
                 <Text color="#474A57">Vice President</Text>
               </Box>
             </HStack>
-            <Text mt="2.4rem" mb="2.4rem" fontSize="1.8rem">
+            <Text mt="2.4rem" fontSize="1.8rem">
               We had an incredible experience working with Landify and were impressed they made such
               a big difference in only three weeks. Our team is so grateful for the wonderful
               improvements they made and their ability to get familiar with the product concept so
