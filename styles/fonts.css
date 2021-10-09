@@ -4,6 +4,16 @@
 }
 
 @font-face {
+  font-family: 'Recoleta Bold';
+  src: url(/font/recoleta-bold.ttf);
+}
+
+@font-face {
+  font-family: 'Recoleta SemiBold';
+  src: url(/font/recoleta-semiBold.ttf);
+}
+
+@font-face {
   font-family: Inter;
   src: url(/font/inter.ttf);
 }

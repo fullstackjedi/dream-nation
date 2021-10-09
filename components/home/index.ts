@@ -1,0 +1,5 @@
+export * from './Hero'
+export * from './PhoneSection'
+export * from './SwapCrypto'
+export * from './Testimonials'
+export * from './ComingSoon'
