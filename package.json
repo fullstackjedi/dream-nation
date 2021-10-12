@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint --fix .",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo test"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.5.1",

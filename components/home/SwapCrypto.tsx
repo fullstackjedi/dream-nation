@@ -5,7 +5,7 @@ import React from 'react'
 export const SwapCrypto = () => {
   return (
     <>
-      <Box as="section" className="skewElem" w="full" bg="#575DE6">
+      <Box id="about" as="section" className="skewElem" w="full" bg="#575DE6">
         <Container maxW="114rem">
           <Flex
             flexDir={{ base: 'column-reverse', md: 'row' }}
@@ -32,7 +32,8 @@ export const SwapCrypto = () => {
           </Flex>
         </Container>
       </Box>
-      <Box as="section" className="skewElem" w="full">
+
+      <Box id="crypto" as="section" className="skewElem" w="full">
         <Container maxW="114rem">
           <Flex
             flexDir={{ base: 'column', md: 'row' }}

@@ -5,7 +5,7 @@ import React from 'react'
 
 export const Hero = () => {
   return (
-    <Container maxW="114rem" pos="relative">
+    <Container id="hero" maxW="114rem" pos="relative">
       <Flex h={{ base: 'calc(80vh - 7rem)', md: '75rem' }} justify="center" align="center">
         <Box textAlign="center" pos="relative" zIndex="1">
           <Heading

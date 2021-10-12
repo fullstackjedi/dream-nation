@@ -1,6 +1,5 @@
 import { Box, Container, Flex, HStack, Image, Link, Text } from '@chakra-ui/react'
 
-import NextLink from 'next/link'
 import React from 'react'
 
 export const Footer = () => {
@@ -9,26 +8,16 @@ export const Footer = () => {
       <Container fontSize="1.6rem" color="#4E4B66" pb="2rem" pt="3rem" maxW="114rem">
         <Flex flexDir={{ base: 'column', md: 'row' }} justify="space-between">
           <Flex flexDir={{ base: 'column', md: 'row' }} justify={{ base: 'center' }} align="center">
-            <Image mr={{ base: '0', md: '2rem' }} w="6rem" src="/images/logo.svg" />
+            <Link href="#hero">
+              <Image mr={{ base: '0', md: '2rem' }} w="6rem" src="/images/logo.svg" />
+            </Link>
             <HStack
               justify="space-between"
               spacing={{ base: '1rem', md: '2rem', lg: '4rem' }}
               mt={{ base: '2rem', md: '0' }}>
-              <NextLink href={'/'} passHref>
-                <Link>Home</Link>
-              </NextLink>
-              <NextLink href={'/'} passHref>
-                <Link>Products</Link>
-              </NextLink>
-              <NextLink href={'/'} passHref>
-                <Link>About</Link>
-              </NextLink>
-              <NextLink href={'/'} passHref>
-                <Link>Features</Link>
-              </NextLink>
-              <NextLink href={'/'} passHref>
-                <Link>Contact</Link>
-              </NextLink>
+              <Link href="#about">About</Link>
+              <Link href="#product">Products</Link>
+              <Link href="mailto:dream9ation@yahoo.com">Contact</Link>
             </HStack>
           </Flex>
           <HStack spacing="4rem" justify="center" mt={{ base: '3rem', md: '0' }}>
@@ -49,21 +38,21 @@ export const Footer = () => {
 
 const Socials = [
   {
-    link: 'https://www.facebook.com',
+    link: 'https://facebook.com/dream9ation/',
     icon: 'fb.svg'
   },
   {
-    link: 'https://www.instagram.com',
+    link: 'https://instagram.com/dream9ation',
     icon: 'ig.svg'
   },
   {
-    link: 'https://www.youtube.com',
+    link: 'https://youtube.com/channel/UCLwXnVMeGeP8m_wmq3sn7Dw',
     icon: 'youtube.svg'
   },
-  {
-    link: 'https://www.twitter.com',
-    icon: 'twitter.svg'
-  },
+  // {
+  //   link: 'https://www.twitter.com',
+  //   icon: 'twitter.svg'
+  // },
   {
     link: 'https://www.linkedin.com',
     icon: 'linkedin.svg'

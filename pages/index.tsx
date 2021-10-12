@@ -1,11 +1,12 @@
 import { Box, Flex, useMediaQuery } from '@chakra-ui/react'
 import { ComingSoon, Hero, PhoneSection, SwapCrypto, Testimonials } from '@components/home'
 import { Footer, Header } from '@components/layout'
-import React, { ReactChild, useRef } from 'react'
+import React, { ReactChild, useRef, useState } from 'react'
 
 import Head from 'next/head'
 
 const Home = (): ReactChild => {
+  const [isHero, setHero] = useState(false)
   const cursorRef = useRef<HTMLDivElement>(document.createElement('div'))
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)')
 
@@ -22,10 +23,17 @@ const Home = (): ReactChild => {
     cursorRef.current.style.opacity = '0'
   }
 
+  const handleCursorZoom = () => {
+    setHero(true)
+  }
+
+  const handleCursorShrink = () => {
+    setHero(false)
+  }
+
   return (
     <Box
       w="100%"
-      overflowX="hidden"
       fontFamily="Inter"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -37,9 +45,9 @@ const Home = (): ReactChild => {
       <Flex
         display={{ base: 'none', md: 'flex' }}
         position="fixed"
-        zIndex="3"
-        w="2.5rem"
-        h="2.5rem"
+        zIndex="50"
+        w={isHero ? '10rem' : '2.5rem'}
+        h={isHero ? '10rem' : '2.5rem'}
         justify="center"
         align="center"
         pointerEvents="none"
@@ -53,12 +61,13 @@ const Home = (): ReactChild => {
       />
 
       <Header />
-      <Hero />
+      <Box onMouseEnter={handleCursorZoom} onMouseLeave={handleCursorShrink} w="full">
+        <Hero />
+      </Box>
       <PhoneSection />
       <SwapCrypto />
       <Testimonials />
       <ComingSoon />
-
       <Footer />
     </Box>
   )

@@ -4,7 +4,7 @@ import React from 'react'
 
 export const ComingSoon = () => {
   return (
-    <Box as="section" className="skewElem" w="full">
+    <Box id="product" as="section" className="skewElem" w="full">
       <Container maxW="114rem">
         <Flex
           flexDir={{ base: 'column-reverse', md: 'row' }}
