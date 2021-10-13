@@ -23,14 +23,14 @@ export const Hero = () => {
 
       <Image pos="absolute" bottom="1rem" left="1rem" src="/images/arrow.svg" />
 
-      <MovingCircle size="2rem" color="#2128bd" left="10%" delay="0" />
-      <MovingCircle size="1rem" color="#FFE5E3" left="20%" delay="1s" />
-      <MovingCircle size="2.5rem" color="#FF5E00" left="30%" delay="0.5s" />
-      <MovingCircle size="0.8rem" color="#2128bd" left="40%" delay="0.2s" />
-      <MovingCircle size="1.5rem" color="#2EC5CE" left="50%" delay="2s" />
-      <MovingCircle size="2.5rem" color="#FF5E00" left="85%" delay="1s" />
-      <MovingCircle size="1rem" color="#2128bd" left="80%" delay="0" />
-      <MovingCircle size="0.6rem" color="#2EC5CE" left="95%" delay="1.2s" />
+      <MovingCircle size="3.2rem" color="#F3BA2F" icon="bnb" left="10%" delay="0" />
+      <MovingCircle size="3.2rem" color="#627EEA" icon="eth" left="20%" delay="1s" />
+      <MovingCircle size="3.2rem" color="#5B6DEE" icon="snt" left="30%" delay="0.5s" />
+      <MovingCircle size="3.2rem" color="#8DC351" icon="bch" left="40%" delay="0.2s" />
+      <MovingCircle size="3.5rem" color="#BFBBBB" icon="ltc" left="50%" delay="2s" />
+      <MovingCircle size="3.5rem" color="#26A17B" icon="usdt" left="85%" delay="1s" />
+      <MovingCircle size="3rem" color="#F7931A" icon="btc" left="80%" delay="0" />
+      <MovingCircle size="3.6rem" color="#008CE7" icon="dash" left="95%" delay="1.2s" />
     </Container>
   )
 }

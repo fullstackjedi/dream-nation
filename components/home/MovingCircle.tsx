@@ -1,4 +1,4 @@
-import { Box, forwardRef } from '@chakra-ui/react'
+import { Box, Image, forwardRef } from '@chakra-ui/react'
 import { isValidMotionProp, motion } from 'framer-motion'
 
 import React from 'react'
@@ -36,19 +36,24 @@ const StyledMotionBox = styled(MotionBox)`
   }
 `
 
-export const MovingCircle = ({ size, color, left, delay, ...rest }: any) => {
+export const MovingCircle = ({ size, icon, color, left, delay, ...rest }: any) => {
   return (
     <StyledMotionBox
       bg={color}
       delay={delay}
       h={size}
       w={size}
+      p="5px"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
       pos="absolute"
       left={left}
       bottom="0"
       zIndex="5"
       rounded="50%"
-      {...rest}
-    />
+      {...rest}>
+      <Image src={`/icons/${icon}.svg`} />
+    </StyledMotionBox>
   )
 }
