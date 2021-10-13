@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Heading, Image, Text } from '@chakra-ui/react'
 
 import { MovingCircle } from './MovingCircle'
 import React from 'react'
@@ -18,6 +18,19 @@ export const Hero = () => {
           <Text mt="1.5rem" fontSize="1.6rem">
             To us crypto is life. We breathe, eat and speak crypto
           </Text>
+          <Button
+            href="https://wa.me/message/LOITUDFKYSM6G1"
+            target="blank"
+            mt="4rem"
+            rounded="2rem"
+            bg="#0160FE"
+            _hover={{
+              bg: '#0160FE'
+            }}
+            color="#fff"
+            as="a">
+            Trade Now
+          </Button>
         </Box>
       </Flex>
 
