@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -19,7 +19,8 @@ class MyDocument extends Document {
                   })();
                 `
             }}
-          />
+          /> */}
+          <script src="//code.tidio.co/sps8lc47uixgjf8h1t60ex7ex12ew9rv.js"></script>
         </Head>
         <body>
           <noscript>

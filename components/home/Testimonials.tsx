@@ -39,20 +39,17 @@ export const Testimonials = () => {
           <Slider {...settings}>
             <Box>
               <HStack spacing="1.5rem">
-                <Avatar size="lg" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+                <Avatar size="lg" name="Dan Abrahmov" src="/images/avatar.png" />
                 <Box>
                   <Heading fontFamily="Inter" color="#18191F" fontSize="1.8rem">
-                    Jenny Wilson
+                    Anikwue Emmanuel
                   </Heading>
-                  <Text color="#474A57">Vice President</Text>
+                  <Text color="#474A57">Customer</Text>
                 </Box>
               </HStack>
               <Text mt="2.4rem" fontSize={{ base: '1.5rem', md: '1.8rem' }}>
-                We had an incredible experience working with Landify and were impressed they made
-                such a big difference in only three weeks. Our team is so grateful for the wonderful
-                improvements they made and their ability to get familiar with the product concept so
-                quickly. It acted as a catalyst to take our design to the next level and get more
-                eyes on our product.
+                Still want to say thanks for your prompt service delivery, for coming through fast.
+                Fast service... I appreciate that alot.
               </Text>
             </Box>
           </Slider>
