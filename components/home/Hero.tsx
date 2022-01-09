@@ -19,7 +19,7 @@ export const Hero = () => {
             To us crypto is life. We breathe, eat and speak crypto
           </Text>
           <Button
-            href="https://wa.me/message/LOITUDFKYSM6G1"
+            href="https://wa.link/cg2acr"
             target="blank"
             mt="4rem"
             rounded="2rem"
